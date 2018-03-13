@@ -1,0 +1,13 @@
+/* Lab3 - kontynuacja zadania z Lab2 */
+#include <stdio.h>
+#include <limits.h>     //dolaczenie pliku naglowkowego zawierajacego wlasciwosci typow calkowitych
+
+int main()
+{
+    int wiek = 4;
+    signed char odpowiedz = 'y'; 
+    printf("Zmienna int ma rozmiar: %dB, najmniejsza wartosc to %d, najwieksza wartosc to %d\n", sizeof(wiek),INT_MIN,INT_MAX);
+    printf("Zmienna signed char ma rozmiar: %dB, najmniejsza wartosc to %d, najwieksza wartosc to %d\n", sizeof(odpowiedz),SCHAR_MIN,SCHAR_MAX);
+
+    return 0;
+}
