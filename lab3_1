@@ -1,0 +1,18 @@
+/* Lab3 - stale */
+#include <stdio.h>
+#define DLUGOSC 50        //wyrazenie stale, uwaga - tutaj nie piszemy znaku "rowna sie" ("=")
+
+int main()
+{
+    const int wysokosc;   //deklaracja stalej typu int bez inicjacji jej wartosci, przechowuje domyslnie 0
+    printf("wartosc wysokosc %d\n",wysokosc);
+    // wysokosc = 30;     //nie mozna zmienic wartosci stalej
+    // printf("wartosc wysokosc %d\n",wysokosc); //po odkomentowaniu i uruchomieniu pojawi sie blad
+    printf("wartosc DLUGOSC %d\n",DLUGOSC);
+    int wiek = 10;        //deklaracja i inicjalizacja stalej typu int
+    printf("wartosc wiek %d\n",wiek);
+    wiek = 20;            //tu zwiekszylismy wartosc zmiennej wiek
+    printf("wartosc wiek %d\n",wiek);
+    
+    return 0;
+}
