@@ -1,0 +1,13 @@
+/* Lab3 - funkcja scanf do zczytywania wartości podanych przez uzytkownika */
+
+#include <stdio.h>
+
+int main()
+{
+    double temperatura;
+    printf("Wpisz temperature: ");    //wypisujemy wiadomosc 
+    scanf("%lf",&temperatura);        //pobieramy wartosc i zapisujemy ja w zmiennej temperatura - prosze zwrocic uwage na ampersand ("&")
+    printf("%lf",temperatura);        //wypisujemy wartosc zmiennej temperatura
+
+    return 0;
+}
