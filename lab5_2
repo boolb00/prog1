@@ -1,0 +1,24 @@
+/* Filename: lab5_2
+   Description: Szkic algorytmu BLS
+*/
+
+int main()
+{
+    char reakcja;
+    char oddychanie;
+    //int oddychanie;
+    printf("Czy reaguje\n");
+    scanf("%c",&reakcja);
+    printf("Czy oddycha\n");
+    scanf(" %c",&oddychanie);
+    //printf("%c %d",reakcja,oddychanie);
+    if ((reakcja=='n') && (oddychanie=='n')) {
+        printf("Wykonuj RKO");
+    } else if ((reakcja=='n') && (oddychanie=='t')) {
+        printf("Pozycja bezpieczna");
+    } else if ((reakcja=='t') && (oddychanie=='t')) {
+        printf("Pozycja bezpieczna");
+    } //przypadek reakcja=='t' && oddychanie=='n' odrzucamy, bo jest sprzeczny!
+    //TODO - sprawdz czy jest AED - jesli nie kontynuuj RKO, jesli tak uzyj AED (zadeklaruj zmienna do sprawdzenia AED)
+    return 0;
+}
