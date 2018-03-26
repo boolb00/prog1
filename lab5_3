@@ -14,8 +14,9 @@ int main()
    // printf("%d", liczba_startowa);
    printf("Liczby naturalne mniejsze niz podana to: ");
    for(licznik=0;licznik<liczba_startowa-1;licznik+=1) {
-       printf("%d, ",licznik);
+       printf("%d\t, ",licznik);
        sumator=sumator+licznik;
+       //printf("%d\n", sumator);
    }
    printf("%d.\n",liczba_startowa-1);
    printf("Suma tego ciagu to %d.",sumator);
