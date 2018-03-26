@@ -1,0 +1,22 @@
+/* Filename:  Lab5_1
+   Description: Instrukcja if-else z operatorami logicznymi
+*/
+#include <stdio.h>
+#define TEMP_WRZENIA 100
+#define TEMP_ZAMARZANIA 0
+
+int main()
+{
+  float temperatura;
+  scanf("%f",&temperatura);
+  
+  if(temperatura<TEMP_ZAMARZANIA){
+      printf("Stan skupienia: lod\n");
+  } else if ((temperatura > TEMP_ZAMARZANIA) && (temperatura < TEMP_WRZENIA)) {
+      printf("Stan skupienia: ciecz\n");  //jesli temp większa od 100 i mniejsza od 0 - sprawdź z alternatywą "||" zamiast "&&"
+  } else {
+      printf("Stan skupienia: gaz\n");
+  }
+  
+    return 0;
+}
