@@ -1,0 +1,18 @@
+/* Filename: lab7_1
+   Description: Rysowanie trojkata - 1
+*/
+
+#include <stdio.h>
+
+int main()
+{
+    int i;
+    int j;
+    for(i=10;i>0;i--){
+        for(j=i;j>0;j--){
+           printf("* ",i);
+        }
+        printf("\n");
+    }
+    return 0;
+}
