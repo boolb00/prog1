@@ -1,0 +1,34 @@
+
+/* Filename: lab7_3
+   Description: Powtorzenie
+*/
+
+#include <stdio.h>
+
+int main ()
+{
+    int licznik;
+    int zlicz_parzyste = 0;
+    int zlicz_nieparzyste = 0;
+    int max = 100;
+    
+    printf ("Dany jest zakres liczb naturalnych od 0 do %d:\n", max);
+    for (licznik = 0; licznik <= max; licznik++){
+        printf ("%d ", licznik);
+        if (licznik % 2 == 0){
+	        // printf("%d ",licznik);
+	        zlicz_parzyste = zlicz_parzyste + licznik;
+        } else {
+            //printf("%dn",licznik);
+            zlicz_nieparzyste = zlicz_nieparzyste + licznik;
+	    }
+    }
+    printf ("\nSuma liczb parzystych w zakresie od 0 do %d to: %d\n", max,
+	  zlicz_parzyste);
+    printf ("Suma liczb NIEparzystych w zakresie od 0 do %d to: %d\n", max,
+	  zlicz_nieparzyste);
+    printf ("Suma liczb naturalnych w zakresie od 0 do %d to: %d\n", max,
+	  zlicz_parzyste + zlicz_nieparzyste);
+
+    return 0;
+}
