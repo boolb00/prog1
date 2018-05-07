@@ -1,0 +1,30 @@
+/* Filename: lab9_2
+   Description: Przeliczanie centymetrow na cale i stopy poza funkcja main() - w funkcjach
+*/
+
+#include <stdio.h>
+#define INCH 2.54
+#define FOOT 12
+
+float przeliczanieCmToInch(float cm){
+    float inch;
+    inch = cm/INCH;   //przeliczac - sami piszemy
+    return inch;
+}
+
+float przeliczanieInchToFoot(float inchInput){
+    float foot;
+    foot = inchInput/FOOT;   //przeliczac - sami piszemy
+    return foot;
+}
+
+int main()
+{
+    float centymetry, naCale, naStopy;
+    scanf("%f",&centymetry);    //pobierac dane - scanf()
+    printf("%.2f tyle cm to %.2f cali\n",centymetry, przeliczanieCmToInch(centymetry)); //wyswietlac - printf()
+    naStopy = przeliczanieCmToInch(centymetry);
+     printf("%.2f tyle cali to %.2f stop\n",naStopy, przeliczanieInchToFoot(naStopy)); //wyswietlac - printf()
+    
+    return 0;
+}
