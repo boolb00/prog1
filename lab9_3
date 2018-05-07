@@ -1,0 +1,48 @@
+/* Filename: lab9_2
+   Description: Przeliczanie centymetrow na cale i stopy poza funkcja main() - w funkcjach, funkcja dwuargumentowa z jednym wynikiem
+*/
+
+#include <stdio.h>
+#define USD 3.3881
+#define EUR 1.2314
+#define JPY 109.28
+#define UAH 31.43
+
+float PLNtoUSD(float inputPLN){
+    float dolar;
+    dolar = inputPLN/USD;   //przeliczanie PLNtoUSD w funkcji
+    return dolar;
+}
+
+float USDtoEUR(float inputUSD){
+    float euro;
+    euro = inputUSD/EUR;   //przeliczanie USDtoEUR w funkcji
+    return euro;
+}
+
+float USD_to_YPY_and_EUR_to_UAH(float inputUSD, float inputEUR){
+    float jeny, hrywny;
+    jeny = inputUSD*JPY;   //pierwsze obliczenie USDtoYPY
+    hrywny = inputEUR*UAH; //drugie obliczenie EURtoUAH
+    return hrywny; //zwracamy JEDEN wynik - albo pierwszy albo drugi
+}
+
+
+int main()
+{
+   float zlotowki, dolary, euro;
+    scanf("%f",&zlotowki);    //pobierac dane - scanf()
+    printf("%.2f zl to %.2f dolarow\n",zlotowki, PLNtoUSD(zlotowki)); //wyswietlac - printf()
+    dolary = PLNtoUSD(zlotowki);
+     printf("%.2f dolarow to %.2f euro\n",dolary, USDtoEUR(dolary)); //wyswietlac - printf()
+    euro = USDtoEUR(dolary);
+    //printf("%.2f dolarow to %.2f jenow\n",dolary, USD_to_YPY_and_EUR_to_UAH(dolary,euro));
+   printf("%.2f euro to %.2f hrywien\n",euro, USD_to_YPY_and_EUR_to_UAH(dolary,euro));
+    return 0;
+}
+
+
+
+
+
+
