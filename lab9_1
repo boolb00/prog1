@@ -1,0 +1,16 @@
+/* Filename: lab9_1
+   Description: Przeliczanie centymetrow na cale wewnatrz funkcji main()
+*/
+
+
+#include <stdio.h>
+
+int main()
+{
+    float centymetry, naCale, naStopy;
+    scanf("%f",&centymetry);    //pobierac dane - scanf()
+    naCale = centymetry/2.54;   //przeliczac - sami piszemy
+    printf("%.2f tyle cm to %.2f cali",centymetry, naCale); //wyswietlac - printf()
+
+    return 0;
+}
