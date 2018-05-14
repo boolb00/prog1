@@ -1,0 +1,28 @@
+/* Filename: lab10_2
+   Description: Odczytywanie i sumowanie elementow tablicy z wartosciami zadeklarowanymi w kodzie
+*/
+
+
+#include <stdio.h>
+
+int main()
+{
+    int tab2[5];
+    int i;
+    int rozmiarTablicy;
+    rozmiarTablicy = sizeof(tab2)/sizeof(int);
+    printf("Rozmiar Tablicy to %d\n",rozmiarTablicy);
+     printf("\nPobieranie wartosci z klawiatury:\n");
+    for(i=0;i<rozmiarTablicy;i++){
+        scanf("%d",&tab2[i]); //pobieranie wartosci z klawiatury
+    }
+    
+    int sumaElementow=0;
+    printf("\nWypisywanie elementow tablicy w kolejnosci odwrotnej do kolejnosci wprowadzania:\n");
+    for(i=4;i>-1;i--){
+        printf("Element %d to %d\n",i,tab2[i]);
+        sumaElementow += tab2[i]; //wypisywanie LIFO
+    }
+    printf("\nSuma elementow w tablicy to %d\n",sumaElementow);
+    return 0;
+}
