@@ -1,0 +1,37 @@
+/* Filename: lab11_2
+   Description: Funkcja do obliczania sumy elementow w tablicy
+*/
+
+#include <stdio.h>
+
+int sumaElementow(int tablicaWejsciowa[], int rozmiar){
+    int sumaEl = 0;
+    int licznik;
+    for(licznik=0;licznik<rozmiar;licznik++){
+        sumaEl += tablicaWejsciowa[licznik];
+    }
+    return sumaEl;
+} 
+
+int main(){
+    int tab[5];
+    int suma = 0;
+    int licznik;
+    printf("WPISYWANIE DANYCH:\n");
+    for(licznik=0;licznik<5;licznik++){
+        scanf(" %d",&tab[licznik]);
+        suma += tab[licznik];
+        printf("PO KAZDYM PRZEBIEGU: %d\n",suma);
+    }
+    printf("\nSUMA ELEMENTOW: %d\n",sumaElementow(tab,5)); //TUTAJ
+    printf("\nWYPISYWANIE DANYCH:\n");
+     for(licznik=0;licznik<5;licznik++){
+        printf("%d\n",tab[licznik]);
+    }
+   // suma = tab[0]+tab[1]+tab[2]+tab[3]+tab[4];
+    printf("\nSUMA ELEMENTOW:\n");
+    printf("%d\n",suma);
+    
+    
+    return 0;
+}
