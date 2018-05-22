@@ -1,0 +1,24 @@
+/* Filename: lab11_1
+   Description: Wpisywanie i wypisywanie elementow tablicy - wersja naiwna (niezalecana)!
+*/
+
+#include <stdio.h>
+
+int main()
+{
+    int tab[5];
+    scanf("%d",&tab[0]);
+    scanf(" %d",&tab[1]);
+    scanf(" %d",&tab[2]);
+    scanf(" %d",&tab[3]);
+    scanf(" %d",&tab[4]);
+    
+    
+    printf("%d\n",tab[0]);
+    printf("%d\n",tab[1]);
+    printf("%d\n",tab[2]);
+    printf("%d\n",tab[3]);
+    printf("%d\n",tab[4]);
+    
+    return 0;
+}
