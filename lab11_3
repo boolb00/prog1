@@ -1,0 +1,23 @@
+/* Filename: lab11_3
+   Description: Obliczanie rozmiaru tablicy i wypisywanie jej elementow
+*/
+
+#include <stdio.h>
+
+int main()
+{
+    int tab[5];
+    int licznik;
+    int rozmiartab = sizeof(tab)/sizeof(int);
+    printf("Rozmiar tabl to %d\n", rozmiartab);
+    printf("WPISYWANIE DANYCH:\n");
+    for(licznik=0;licznik<rozmiartab;licznik++){
+        scanf(" %d",&tab[licznik]);
+    }
+     printf("\nWYPISYWANIE DANYCH:\n");
+     for(licznik=0;licznik<10;licznik++){
+        printf("%d\n",tab[licznik]);
+    }
+
+    return 0;
+}
